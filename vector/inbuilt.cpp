@@ -45,7 +45,7 @@ public:
 
 	void pop_back() {
 		if (sz > 0)
-			arr[sz - 1] = 0, sz--;
+			a[sz - 1] = 0, sz--;
 	}
 
 	int operator[](int i) {
