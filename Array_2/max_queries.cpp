@@ -32,7 +32,8 @@ void answerQueries(int arr[], int queries[], int N, int M) {
 }
 
 int main() {
-    int N, M; cin >> N >> M;
+    int N, M; 
+    cin >> N >> M;
     int *arr = new int[N];
     int *queries = new int[M];
 
