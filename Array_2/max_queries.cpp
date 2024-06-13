@@ -1,3 +1,4 @@
+// not avaible on platforms
 #include <bits/stdc++.h>
 using namespace std;
 
