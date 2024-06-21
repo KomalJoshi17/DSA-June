@@ -1,3 +1,3 @@
-time = no. of recursive cals * no. of operations in each recursive call
+time = no. of recursive calls * no. of operations in each recursive call
 
 space = depth of recursion * space used in each recursive call
