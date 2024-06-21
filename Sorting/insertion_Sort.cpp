@@ -1,28 +1,18 @@
 // inserting an element in an already sorted list
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-    
-int main(){
-    int n;
-    cin>>n;
-    int arr[100];
-    int k;
-    cin>>k;
-
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-
-    for(int i=n;i>0;i--){
-        if(arr[i]>k){
-            arr[i]=arr[i-1];
+class Solution
+{
+    public:
+    //Function to sort the array using insertion sort algorithm.
+    void insertionSort(int arr[], int n)
+    {
+        for(int i=1;i<n;i++){
+            int curNum=arr[i], j=i-1;
+            while(j>=0 && arr[j]>curNum){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j + 1] = curNum;
         }
     }
-    n++;
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-    return 0;
-}
+};
