@@ -19,7 +19,7 @@
 
 
 // Time Complexity Analysis
-// O(N^N)
+// O(N^2)
 
 // Space Complexity Analysis
 // O(1)

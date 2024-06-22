@@ -64,7 +64,7 @@ int main()
       scanf("%d",&arr[i]);
       Solution ob;
     ob.quickSort(arr, 0, n-1);
-    printArray(arr, n);
+    // printArray(arr, n);
     }
     return 0;
 }
