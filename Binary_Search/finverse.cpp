@@ -9,13 +9,12 @@ int func(int k) {
 	}
 	return ans;
 }
-
-int main() {
-	int n = 1370;
-	// f(x) = n
+// f(x) = n
 	// f(x) = x + x/10 + x/100 + ....
 	// n = x + x/10 + x/100+ .....
 	// n > x
+int main() {
+	int n = 1370;
 	int s = 0, e = n;
 	int ans = -1;
 	while(s <= e) {
