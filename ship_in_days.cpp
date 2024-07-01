@@ -32,7 +32,8 @@ public:
             } else {
                 min_cap = mid_cap + 1;
             }
-        } O(log(sum(ele)) * n)
+        } 
+        O(log(sum(ele)) * n)
         
         return ans;
         // for(int i = min_cap; i <= max_cap; i++) {
