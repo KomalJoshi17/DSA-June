@@ -30,24 +30,24 @@ Node* constructLL(vector<int>& arr) {
     return head;
 }
 
-// Node* removesHead(Node *head) {
-//     if (head == nullptr) return head;
-//     Node *temp = head;
-//     head = head->next;
-//     delete temp;
-//     return head;
-// }
+Node* removesHead(Node *head) {
+    if (head == nullptr) return head;
+    Node *temp = head;
+    head = head->next;
+    delete temp;
+    return head;
+}
 
-// Node* removesTail(Node *head) {
-//     if (head == nullptr || head->next==nullptr ) return nullptr;
-//     Node * temp=head;
-//     while (temp-> next-> next !=nullptr){
-//         temp=temp->next;
-//     }
-//     delete temp-> next;
-//     temp-> next=nullptr;
-//     return head;
-// }
+Node* removesTail(Node *head) {
+    if (head == nullptr || head->next==nullptr ) return nullptr;
+    Node * temp=head;
+    while (temp-> next-> next !=nullptr){
+        temp=temp->next;
+    }
+    delete temp-> next;
+    temp-> next=nullptr;
+    return head;
+}
 
 Node * removesK(Node * head,int k){
     if(head==nullptr) return head;
