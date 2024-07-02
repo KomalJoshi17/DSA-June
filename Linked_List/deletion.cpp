@@ -30,13 +30,13 @@ Node* constructLL(vector<int>& arr) {
     return head;
 }
 
-Node* removesHead(Node *head) {
-    if (head == nullptr) return head;
-    Node *temp = head;
-    head = head->next;
-    delete temp;
-    return head;
-}
+// Node* removesHead(Node *head) {
+//     if (head == nullptr) return head;
+//     Node *temp = head;
+//     head = head->next;
+//     delete temp;
+//     return head;
+// }
 
 Node* removesTail(Node *head) {
     if (head == nullptr || head->next==nullptr ) return nullptr;
