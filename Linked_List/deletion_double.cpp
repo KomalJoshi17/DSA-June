@@ -86,7 +86,7 @@ Node* removesK(Node* head, int k) {
         temp->back->next = temp->next;
     }
     if (temp->next != nullptr) {
-        temp->next->back = temp->prev;
+        temp->next->back = temp->back;
     }
     delete temp;
     return head;
